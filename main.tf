@@ -8,6 +8,10 @@ module "aws_sns_topic" {
   source = "./sns"
 }
 
+module "ssm-parameter-store" {
+  source = "./ssm-parameter-store"
+}
+
 module "log_group" {
   source = "./log_group"
 }
